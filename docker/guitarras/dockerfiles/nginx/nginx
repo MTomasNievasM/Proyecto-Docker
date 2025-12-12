@@ -16,6 +16,6 @@ EXPOSE 80
 RUN mkdir -p /root/admin/nginx
 WORKDIR /root/admin/nginx
 COPY ./dockerfiles/nginx/admin .
-RUN chmod +x /root/admin/nginx/admin/start.sh
+RUN chmod +x /root/admin/nginx/start.sh
 
 ENTRYPOINT ["./admin/start.sh"]
