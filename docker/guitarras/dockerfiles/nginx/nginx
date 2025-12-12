@@ -18,4 +18,4 @@ WORKDIR /root/admin/nginx
 COPY ./dockerfiles/nginx/admin .
 RUN chmod +x /root/admin/nginx/start.sh
 
-ENTRYPOINT ["./admin/start.sh"]
+ENTRYPOINT ["./start.sh"]
