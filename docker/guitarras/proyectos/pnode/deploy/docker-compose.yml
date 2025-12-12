@@ -2,20 +2,20 @@ services:
   web:
     build:
       context: ${CONTEXTO}
-      dockerfile: ./dockerfiles/ubbase/ubbase 
+      dockerfile: ./dockerfiles/node/node
     container_name: ${CONTAINER_NAME}
-    image: imagen_ubbase
+    image: imagen_node
     ports:
-      - ${PORT_SSH}:80
+      - ${PORT_WEB}:80
     env_file:
       - ./.env
     volumes:
       - ./logs:/root/logs 
     networks:
-      netmegacrossover:
+      netnode:
         ipv4_address: ${IP_WEB}
 networks:
-  netmegacrossover:
+  netnode:
     driver: bridge
     ipam:
       driver: default
