@@ -7,7 +7,7 @@ RUN apt install -yq --no-install-recommends \
 RUN mkdir -p /root/admin/node
 RUN mkdir -p /root/admin/node/proyectos/guitarras
 WORKDIR /root/admin/node
-COPY ./proyectos/PokeAPi/PokeapiConDigimon/* ./proyectos/guitarras
+COPY ./proyectos/pokeapit/PokeapiConDigimon ./proyectos/guitarras
 COPY ./dockerfiles/node/admin/start.sh /root/admin/node/
 RUN chmod +x /root/admin/node/start.sh
 
