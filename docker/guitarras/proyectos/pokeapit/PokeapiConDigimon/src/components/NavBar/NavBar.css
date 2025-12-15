@@ -1,0 +1,6 @@
+.nav{position:sticky;top:0;background:#fff;border-bottom:1px solid #e5e7eb;z-index:10}
+.nav__row{display:flex;align-items:center;gap:24px;height:64px;padding:0 16px}
+.nav__brand{font-weight:800;color:#111827;text-decoration:none}
+.nav__links{display:flex;gap:16px}
+.nav__links a{color:#374151;text-decoration:none;font-weight:600}
+.nav__links a.active{color:#2563eb}
