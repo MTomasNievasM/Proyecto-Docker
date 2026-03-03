@@ -1,5 +1,5 @@
 # Heredar de tu imagen 01_ubase (cambia el nombre si es distinto en tu local)
-FROM mortviva7/ubbase 
+FROM /ubbase 
 
 # Crear directorio para los scripts de esta capa
 RUN mkdir -p /root/admin/ciber
