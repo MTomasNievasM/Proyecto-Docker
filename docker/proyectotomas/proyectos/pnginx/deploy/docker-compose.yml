@@ -1,0 +1,13 @@
+services:
+  web:
+    build:
+      context: ${CONTEXTO}
+      dockerfile: ./dockerfiles/02_ciber/Dockerfile
+    container_name: ctl_ciber
+    image: mortviva7/ubciber
+    ports:
+      - 3457:22
+    env_file:
+      - ./.env
+    volumes:
+      - ./logs:/root/logs
