@@ -2,11 +2,11 @@ version: '3.8'
 
 services:
   portfolio:
-    image: mortviva7/ubportfolio:latest 
-    container_name: ctl_portfolio
+    image: mtomasnievasm/ubportfolio:latest 
+    container_name: cttomasportfolio
     build:
       context: ${CONTEXTO}
-      dockerfile: ./dockerfiles/05_portfolio/Dockerfile
+      dockerfile: ./dockerfiles/04_portfolio/Dockerfile
     ports:
       - "5000:5000"
       - "1974:80"
@@ -16,9 +16,9 @@ services:
     volumes:
       - ./logs:/root/logs 
     networks:
-      - red_proyectolinas
+      - red_proyectotomas
     restart: always
 
 networks:
-  red_proyectolinas:
+  red_proyectotomas:
     external: true

@@ -2,9 +2,9 @@ services:
   web:
     build:
       context: ${CONTEXTO}
-      dockerfile: ./dockerfiles/02_ciber/Dockerfile
-    container_name: ctl_ciber
-    image: mortviva7/ubciber
+      dockerfile: ./dockerfiles/02_seguridad/Dockerfile
+    container_name: cttomasseguridad
+    image: mtomasnievasm/ubseguridad
     ports:
       - 3457:22
     env_file:

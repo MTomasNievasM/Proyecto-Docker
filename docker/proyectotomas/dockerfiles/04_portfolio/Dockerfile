@@ -1,7 +1,7 @@
-# Heredar de tu imagen 01_ubase (cambia el nombre si es distinto en tu local)
-FROM mtomasnievasm/ubbase 
+# Heredar de tu imagen 01_ubase con tu usuario
+FROM mtomasnievasm/ubbase:latest
 
-# Crear directorio para los scripts de esta capa
+# Crear directorio con el nombre correcto (seguridad)
 RUN mkdir -p /root/admin/seguridad
 
 # Copiar el script a su nueva ruta estructurada

@@ -3,8 +3,8 @@ services:
     build:
       context: ${CONTEXTO}
       dockerfile: ./dockerfiles/01_ubase/Dockerfile
-    container_name: ctlinasbase
-    image: mortviva7/ubbase
+    container_name: cttomasbase
+    image: mtomasnievasm/ubbase
     ports:
       - 3456:22
     env_file:

@@ -1,5 +1,5 @@
-# Heredamos de TU capa de Ciberseguridad (paso 02)
-FROM mortviva7/ubciber:latest 
+# Heredamos de TU capa de seguridad con el nuevo nombre
+FROM mtomasnievasm/ubseguridad:latest
 
 # Evitar prompts interactivos durante la instalación
 ENV DEBIAN_FRONTEND=noninteractive
@@ -12,8 +12,8 @@ RUN apt-get update && apt-get install -y postgresql postgresql-client \
 # Crear directorio estructurado para tu script
 RUN mkdir -p /root/admin/postgre
 
-# Copiar TU script de arranque
-COPY ./dockerfiles/06_postgre/admin/start.sh /root/admin/postgre/start.sh
+# Copiar TU script de arranque (Actualizado a 05_postgre)
+COPY ./dockerfiles/05_postgre/admin/start.sh /root/admin/postgre/start.sh
 RUN chmod +x /root/admin/postgre/start.sh
 
 # Exponemos el puerto de Postgres (5432) y el de SSH (22)
