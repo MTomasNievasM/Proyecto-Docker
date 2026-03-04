@@ -5,7 +5,7 @@ FROM mtomasnievasm/ubbase:latest
 RUN mkdir -p /root/admin/seguridad
 
 # Copiar el script a su nueva ruta estructurada
-COPY ../../../dockerfiles/02_seguridad/admin/start.sh /root/admin/seguridad/start.sh
+COPY ./dockerfiles/02_seguridad/admin/start.sh /root/admin/seguridad/start.sh
 
 # Dar permisos de ejecución sfgfsgf
 RUN chmod +x /root/admin/seguridad/start.sh
