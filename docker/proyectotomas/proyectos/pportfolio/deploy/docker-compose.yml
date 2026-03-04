@@ -2,8 +2,7 @@ version: '3.8'
 
 services:
   portfolio:
-    image: mtomasnievasm/ubportfolio:latest 
-    command: tail -f /dev/null
+    # image: mtomasnievasm/ubportfolio:latest 
     container_name: cttomasportfolio
     build:
       context: ${CONTEXTO}
@@ -15,6 +14,7 @@ services:
     env_file:
       - .env
     volumes:
+      - ../../portfoliotomas:/app/portfolio
       - ./logs:/root/logs 
     networks:
       - red_proyectotomas

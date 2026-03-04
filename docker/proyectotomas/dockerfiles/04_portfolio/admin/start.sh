@@ -18,11 +18,14 @@ if [ ! -d "node_modules" ]; then
     npm install
 fi
 
+# Dar permisos a los binarios de node_modules
+chmod +x node_modules/.bin/*
+
 echo "[PORTFOLIO] Compilando proyecto (npm run build)..."
 npm run build
 
 echo "[PORTFOLIO] Iniciando Portfolio en puerto 5000..."
-npm run dev -- --host 0.0.0.0 --port 5000 &
+npm run dev -- --port 5000 &
 
 # 3. MANTENEMOS VIVO
 echo "=== TODO LISTO Y FUNCIONANDO (CAPA 05) ==="
